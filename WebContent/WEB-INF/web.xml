@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<display-name>ecole_application</display-name>
+	<servlet>
+		<servlet-name>FrontController</servlet-name>
+		<servlet-class>com.controllers.FrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FrontController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>APP_PATH</param-name>
+		<param-value>/ecole_application/</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>ADMIN_LAYOUT</param-name>
+		<param-value>/WEB-INF/layouts/admin/</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>ETUDIANT_LAYOUT</param-name>
+		<param-value>/WEB-INF/layouts/etudiant/</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>TUTEUR_LAYOUT</param-name>
+		<param-value>/WEB-INF/layouts/tuteur/</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>ADMIN_STYLES</param-name>
+		<param-value>/ecole_application/static/admin/</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>IMAGES_PATH</param-name>
+		<param-value>/ecole_application/images/</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>DOCUMENTS_PATH</param-name>
+		<param-value>/ecole_application/documents/</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>ETUDIANT_STYLES</param-name>
+		<param-value>/ecole_application/static/etudiant/</param-value>
+	</context-param>
+</web-app>
